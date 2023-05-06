@@ -1,5 +1,4 @@
 <template>
-  <link rel="stylesheet" href="fontawesome">
   <top-nav/>
   <div class="seperation">
     <side-nav class="links"/>
@@ -43,12 +42,6 @@ export default {
 
 .top-nav a.router-link-exact-active {
   color: #42b983;
-}
-
-.side-nav{
-  display: flex;
-  flex-direction: column;
-  justify-self: center;
 }
 
 .seperation {
