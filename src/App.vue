@@ -1,15 +1,21 @@
 <template>
+  <link rel="stylesheet" href="fontawesome">
   <top-nav/>
-  <router-view/>
+  <div class="seperation">
+    <side-nav class="links"/>
+    <router-view class="content"/>
+  </div>
 </template>
 
 <script>
 import TopNav from '@/components/TopNav.vue';
+import SideNav from './components/SideNav.vue';
 
 export default {
   name: 'App',
   components: {
-    TopNav
+    TopNav,
+    SideNav,
   }
 }
 </script>
@@ -37,5 +43,23 @@ export default {
 
 .top-nav a.router-link-exact-active {
   color: #42b983;
+}
+
+.side-nav{
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+}
+
+.seperation {
+  display: flex;
+  flex-direction: row;
+  justify-content: baseline;
+  margin: 2rem 2rem;
+  }
+
+.content {
+  align-items: center;
+  justify-content: center;
 }
 </style>
