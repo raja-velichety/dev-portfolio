@@ -1,7 +1,5 @@
 <template>
     <div class="top-nav">
-        <div class="logo">R</div>
-
         <div class="menu">
             <router-link to="/">1. Home</router-link> |
             <router-link to="/about">2. About</router-link>

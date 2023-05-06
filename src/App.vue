@@ -4,7 +4,7 @@
 </template>
 
 <script>
-import TopNav from '@/components/TopNav.vue'
+import TopNav from '@/components/TopNav.vue';
 
 export default {
   name: 'App',
@@ -23,20 +23,7 @@ export default {
 
 .top-nav{
   display: flex;
-  flex-direction: row;
   align-content: space-around;
-  background-color: aliceblue;
-}
-
-.top-nav .logo {
-  font-size: 30px;
-  font-weight: bold;
-  color: #42b983;
-  margin-right: 10px;
-  justify-content: flex-start;
-}
-
-.top-nav .menu {
   justify-content: flex-end;
 }
 
