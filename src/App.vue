@@ -1,9 +1,12 @@
 <template>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous"/>
+  <!-- <div class="container">  -->
   <top-nav/>
-  <div class="seperation">
-    <side-nav class="links"/>
-    <router-view class="content"/>
-  </div>
+    <div class="seperation">
+      <side-nav class="links"/>
+      <router-view class="content"/>
+    </div>
+  <!-- </div> -->
 </template>
 
 <script>
@@ -22,8 +25,15 @@ export default {
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
-  text-align: center;
   color: #2c3e50;
+}
+
+.container-fluid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
 
 .top-nav{
@@ -52,7 +62,6 @@ export default {
   }
 
 .content {
-  align-items: center;
   justify-content: center;
 }
 </style>

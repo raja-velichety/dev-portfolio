@@ -1,10 +1,12 @@
 <template>
     <div class="top-nav">
+        <div class="logo">
+            <router-link to="/" class="named-logo">RV</router-link>
+        </div>
         <div class="menu">
-            <router-link to="/">1. Home</router-link> |
-            <router-link to="/about">2. About</router-link> |
-            <router-link to="/experience">3. Experience</router-link> |
-            <router-link to="/projects">4. Projects</router-link>
+            <router-link to="/about">1. About</router-link> |
+            <router-link to="/experience">2. Experience</router-link> |
+            <router-link to="/projects">3. Projects</router-link>
         </div>
     </div>
 </template>
@@ -19,5 +21,14 @@ export default {
 <style scoped>
 .top-nav {
     padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.named-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
 }
 </style>

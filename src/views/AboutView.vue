@@ -1,5 +1,8 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
+  <div class="container-fluid">
+    <div class="about">
+      <h1 class="title">About Me</h1>
+    </div>
   </div>
 </template>
+
