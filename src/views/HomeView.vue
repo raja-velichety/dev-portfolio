@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid">
+  <div class="container-fluid" id="home-section">
     <div class="home">
       <h1 class="title">Raja ravichandra Velichety.</h1>
       <h2 class="tagline">I build things for the web.</h2>
@@ -11,7 +11,6 @@
 </template>
 
 <script>
-
 export default {
   name: 'HomeView',
   components: {
@@ -19,12 +18,11 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
   .home {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 10rem;
   }
 
   .home .title {

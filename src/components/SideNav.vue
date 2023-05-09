@@ -1,5 +1,5 @@
 <template>
-    <div class="side-nav">
+    <div class="container-fluid side-nav">
         <div class="links">
             <a href="https://github.com/raja-velichety"><font-awesome-icon class="icon" :icon="['fab', 'github']" size="2xl"/></a>
             <a href="https://www.linkedin.com/in/raja-ravichandra-velichety-939893175/"><font-awesome-icon class="icon" :icon="['fab', 'linkedin']" size="2xl"/></a>
@@ -9,16 +9,12 @@
 </template>
 
 <style scoped>
-.side-nav {
-    height: 100vh;
-    padding: 1rem;
-}
-
 .links {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    margin-top: 10rem;
 }
 
 .icon {

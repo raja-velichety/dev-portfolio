@@ -1,5 +1,5 @@
 <template>
-    <div class="container-fluid">
+    <div class="container-fluid" id="experience-section">
       <div class="experience">
       <h1 class="heading">2. I have worked before:</h1>
       <hr class="horizontal-line"/>
@@ -41,9 +41,7 @@
 .experience {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin: 10rem;
-    width: 80%;
+    width: 100%;
   }
   .experience .heading {
     font-size: 2rem;

@@ -1,7 +1,12 @@
 <template>
+  <div class="container-fluid">
     <div class="projects">
-      <h1>This is the projects page</h1>
+      <div class="card">
+        <div class="card-header">
+        </div>
+      </div>
     </div>
+  </div>
   </template>
   
   <script>
@@ -12,3 +17,6 @@
     }
   }
   </script>
+
+<style>
+</style>
