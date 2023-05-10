@@ -9,8 +9,9 @@ import { faInstagram } from '@fortawesome/free-brands-svg-icons'
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'jquery/src/jquery.js';
-
+import 'popper.js/dist/popper.min.js';
+import { faFolder } from '@fortawesome/free-regular-svg-icons'
 //side nav icons for social media and github
-library.add(faLinkedin, faGithub, faInstagram)
+library.add(faLinkedin, faGithub, faInstagram, faFolder)
 
 createApp(App).component('font-awesome-icon', FontAwesomeIcon).use(router).mount('#app')

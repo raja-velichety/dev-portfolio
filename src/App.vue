@@ -7,6 +7,7 @@
         <about-view class="content" id="about-section"/>
         <experience-view class="content" id="experience-section"/>
         <projects-view class="content" id="projects-section"/>
+        <contact-view class="content" id="contact-section"/>
       </div>
     </div>
 </template>
@@ -18,6 +19,7 @@ import HomeView from './views/HomeView.vue';
 import AboutView from './views/AboutView.vue';
 import ExperienceView from './views/ExperienceView.vue';
 import ProjectsView from './views/ProjectsView.vue';
+import ContactView from './views/ContactView.vue';
 
 export default {
   name: 'App',
@@ -27,7 +29,8 @@ export default {
     HomeView,
     AboutView,
     ExperienceView,
-    ProjectsView
+    ProjectsView,
+    ContactView
   }
 }
 </script>
@@ -53,7 +56,7 @@ export default {
 }
 
 .content {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
 }
 

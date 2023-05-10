@@ -4,7 +4,7 @@
       <h1 class="heading">3. Projects</h1>
       <hr class="horizontal-line"/>
       <div class="container-fluid">
-        <div class="row" v-for="project, index in projects" :key="project.id">
+        <div class="row" v-for="project, index in featuredProjects" :key="project.id">
           <div class="col-md-6">
             <div class="project" v-if="arrangeProjects(index)">
               <div class="project-info">
@@ -37,19 +37,21 @@
             </div>
         </div>
       </div>
+      <NoteWorthyProjects :projects="noteWorthyProjects"/>
     </div>
   </div>
 </template>
   
   <script>
-  
+  import NoteWorthyProjects from '@/components/NoteWorthyProjects.vue';
   export default {
     name: 'ProjectsView',
     components: {
+      NoteWorthyProjects
     },
     data() {
       return {
-        projects : [
+        featuredProjects : [
           {
             id: "rootjobs",
             title: "Rootjobs.com",
@@ -103,6 +105,99 @@
               "jQuery",
             ]
           }
+        ],
+
+        noteWorthyProjects : [
+          {
+            title: "Rootjobs.com",
+            description: [
+              "A job search platform built with python, Django, MySQL, and AWS.",
+              "Support api for integrating with other vendors based on django rest framework",
+              "Developed frontend using react"
+            ],
+            tools: [
+              "Python",
+              "Django",
+              "PostgresSQL",
+              "React",
+              "Django Rest Framework"
+            ]
+          },
+          {
+            title: "Rootjobs.com",
+            description: [
+              "A job search platform built with python, Django, MySQL, and AWS.",
+              "Support api for integrating with other vendors based on django rest framework",
+              "Developed frontend using react"
+            ],
+            tools: [
+              "Python",
+              "Django",
+              "PostgresSQL",
+              "React",
+              "Django Rest Framework"
+            ]
+          },
+          {
+            title: "Rootjobs.com",
+            description: [
+              "A job search platform built with python, Django, MySQL, and AWS.",
+              "Support api for integrating with other vendors based on django rest framework",
+              "Developed frontend using react"
+            ],
+            tools: [
+              "Python",
+              "Django",
+              "PostgresSQL",
+              "React",
+              "Django Rest Framework"
+            ]
+          },
+          {
+            title: "Rootjobs.com",
+            description: [
+              "A job search platform built with python, Django, MySQL, and AWS.",
+              "Support api for integrating with other vendors based on django rest framework",
+              "Developed frontend using react"
+            ],
+            tools: [
+              "Python",
+              "Django",
+              "PostgresSQL",
+              "React",
+              "Django Rest Framework"
+            ]
+          },
+          {
+            title: "Rootjobs.com",
+            description: [
+              "A job search platform built with python, Django, MySQL, and AWS.",
+              "Support api for integrating with other vendors based on django rest framework",
+              "Developed frontend using react"
+            ],
+            tools: [
+              "Python",
+              "Django",
+              "PostgresSQL",
+              "React",
+              "Django Rest Framework"
+            ]
+          },
+          {
+            title: "Rootjobs.com",
+            description: [
+              "A job search platform built with python, Django, MySQL, and AWS.",
+              "Support api for integrating with other vendors based on django rest framework",
+              "Developed frontend using react"
+            ],
+            tools: [
+              "Python",
+              "Django",
+              "PostgresSQL",
+              "React",
+              "Django Rest Framework"
+            ]
+          },
         ]
       }
     },
