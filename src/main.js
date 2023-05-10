@@ -6,6 +6,9 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faInstagram } from '@fortawesome/free-brands-svg-icons'
+import 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'jquery/src/jquery.js';
 
 //side nav icons for social media and github
 library.add(faLinkedin, faGithub, faInstagram)

@@ -1,6 +1,4 @@
 <template>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous"/>
-  <div class="container-fluid" data-spy="scroll" data-target=".navbar" data-offset="50" > 
     <top-nav class="top-bar"/>
     <div class="row">
       <side-nav class="links col-md-2 col-xs-12"/>
@@ -11,7 +9,6 @@
         <projects-view class="content" id="projects-section"/>
       </div>
     </div>
-  </div>
 </template>
 
 <script>
@@ -31,16 +28,7 @@ export default {
     AboutView,
     ExperienceView,
     ProjectsView
-  },
-  // mounted() {
-  //   let jqueryScript = document.createElement('script');
-  //   jqueryScript.setAttribute('src', 'https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js');
-  //   document.head.appendChild(jqueryScript);
-
-  //   let bootstrapScript = document.createElement('script');
-  //   bootstrapScript.setAttribute('src', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js');
-  //   document.head.appendChild(bootstrapScript);
-  // },
+  }
 }
 </script>
 
@@ -72,5 +60,17 @@ export default {
 .views {
   overflow-y: scroll;
   height: 100vh;
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: 500;
+  color: black;
+  text-decoration: none;
+}
+
+.horizontal-line {
+  width: 100%;
+  border: 1px solid rgb(77, 63, 63);
 }
 </style>

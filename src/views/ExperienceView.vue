@@ -5,18 +5,25 @@
       <hr class="horizontal-line"/>
       <div class="experience-tabs">
         <div class="row">
-          <div class="col-3">
-            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-              <a class="nav-link" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Bank ozk innovation labs</a>
-              <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">University Communications, EMU</a>
-              <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Syscon International</a>
-              <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">University Communications,EMU</a>
-              <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">University Communications, Eastern Michigan University</a>
+          <div class="col-md-3 col-xs-12">
+            <ul class="nav nav-pills flex-column" v-for="job,index in jobs" :key="job">
+              <li class="nav-item">
+                <button class="nav-link" v-on:click="selectJob(index)">{{ job.company }}</button>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-9 col-xs-12">
+              <div :id="selectedJob.id">
+                <h4>{{ selectedJob.title }}</h4>
+                <p>{{ selectedJob.date }}</p>
+                <ul>
+                  <li v-for="item in selectedJob.description" :key="item"><p>{{ item }}</p></li>
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
+        </div> 
       </div>
-    </div>
     </div>
   </template>
   
@@ -26,12 +33,93 @@
     name: 'ExperienceView',
     components: {
     },
+    mounted() {
+      this.selectedJob = this.jobs[0];
+    },
+    data() {
+      return {
+        selectedJob: {},
+        isActive: false,
+        jobs: [
+          { 
+            id: "job1",
+            title: 'Software Engineer II',
+            company: 'Bank ozk innovation labs', 
+            description: [
+              "Involved with bug fixing on functionality, performance and designing issues.",
+              "Participated in design and code reviews to ensure best practices and high-quality code.",
+              "Developed custom components and functionality based on react and vue.",
+              "Supported release management and task creation for sprints.",
+              "Provided support for contentstack and helped solve common bottlenecks faced by clients."
+            ],
+            date: 'July 2022 - April 2023',
+          },
+          { 
+            id: "job2",
+            title: 'Full Stack Web Developer',
+            company: 'University Communications, EMU', 
+            description: [
+              "Designed and developed custom dynamic forms which are used for managing social media handles as required.",
+              "Developed and fulfilled feature requests by several departments within the university.",
+              "Collaborated with marketing and department heads to unify the websites by building custom reusable components",
+              "Participated in design and code reviews ensuring best practices and guidelines are met",
+              "Collaborated with Physical plant department in upgrading and bug fixing critical vue application for efficiency"
+            ],
+            date: 'Feb 2022 - June 2022',
+          },
+          { 
+            id: "job3",
+            title: 'Software Engineer',
+            company: 'Syscon International', 
+            description: [
+              "Facilitated API design and development for enterprise product (Plant Star) with Django rest api framework",
+              "Involved with bug fixing on functionality, performance and designing issues",
+              "Facilitated design and code reviews to ensure best practices and high-quality code"
+            ],
+            date: 'Dec 2020 - Feb 2022',
+          },
+          { 
+            id: "job4",
+            title: 'Full Stack Web Developer',
+            company: 'University Communications, EMU', 
+            description: [
+              "Developed and fulfilled feature requests by several departments within the university",
+              "Maintained and migrated legacy system from symphony to django in backend",
+              "Migrated legacy system from plain js to vue 2 and developed several reusable components for unified design",
+              "Implemented backend development through symphony 2 framework."
+            ],
+            date: 'Sep 2020 - December 2020',
+            isActive: false
+          },
+          {
+            id: "job5",
+            title: 'Full Stack Web Developer intern',
+            company: 'University Communications, EMU', 
+            description: [
+              "Developing and designing new web applications for Eastern Michigan University.",
+              "Developed and fulfilled feature requests by several departments within the university."
+            ],
+            date: 'Sep 2019 - April 2020',
+            isActive: false
+          },
+          {
+            id: "job6",
+            title: "Research Graduate Assistant",
+            company: "Eastern Michigan University", 
+            description: [
+              "Built an autonomous self-driving RC car and hacked into the working of the car for demonstrating security loopholes.",
+              "A demonstrative research project, a python based can hat hacking and Driver data analysis using the machine learning algorithms MLP, KNN etc. for recognizing the driving patterns and distinguishing between the authorized driver and some other. thereby notifying the owner about theft of the car or anomalies occurred."
+            ],
+            date: 'Sep 2018 - June 2019',
+            isActive: false
+          }
+        ]
+      }
+    },
     methods: {
-      activeClass: function (...names) {
-        for (let name of names) {
-          if (name == this.$route.name)
-            return 'active';
-        }
+      selectJob(index) {
+          this.selectedJob = this.jobs[index];
+          this.selectJob.isActive = true;
       }
     }    
   }
@@ -63,15 +151,9 @@
 
   .nav-link {
     color: black;
-    background-color: aquamarine;
   }
 
-  .nav-link::before {
-    color: green;
-    content: "";
+  .nav-link:hover {
+    background-color: green;
   }
-
-  .navbar-nav > .active > a { 
-    background-color: aquamarine ; 
-}
 </style>
