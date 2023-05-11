@@ -3,7 +3,7 @@
     <div class="about">
       <h1 class="heading">1.About Me</h1>
       <hr class="horizontal-line"/>
-      <div class="container-fluid">
+      <div class="container-fluid about-info">
         <div class="row">
           <div class="col-md-9">
             <p class="description" v-for="item in profile.description" :key="item">{{ item }}</p>
@@ -57,6 +57,11 @@ export default {
     display: flex;
     flex-direction: column;
     width: 100%;
+  }
+
+  .about-info{
+    background-color: black;
+    padding: 1rem;
   }
 </style>
 

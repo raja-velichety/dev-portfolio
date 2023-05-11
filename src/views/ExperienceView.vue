@@ -5,20 +5,20 @@
       <hr class="horizontal-line"/>
       <div class="experience-tabs">
         <div class="row">
-          <div class="col-md-3 col-xs-12">
-            <ul class="nav nav-pills flex-column" v-for="job,index in jobs" :key="job">
+          <div class="col-md-3 col-xs-12 experience-tablist">
+            <ul class="nav nav-pills" v-for="job,index in jobs" :key="job" role="tablist">
               <li class="nav-item">
-                <button class="nav-link" v-on:click="selectJob(index)">{{ job.company }}</button>
+                <a class="nav-link" v-on:click="selectJob(index)">{{ job.company }}</a>
               </li>
             </ul>
           </div>
-          <div class="col-md-9 col-xs-12">
+          <div class="col-md-9 col-xs-12 experience-info">
               <div :id="selectedJob.id">
                 <h4>{{ selectedJob.title }}</h4>
                 <p>{{ selectedJob.date }}</p>
-                <ul>
-                  <li v-for="item in selectedJob.description" :key="item"><p>{{ item }}</p></li>
-                </ul>
+                <div class="col-xs-12 text-truncate">
+                <p class="text-justify" v-for="item in selectedJob.description" :key="item">{{ item }}</p>
+                </div>
               </div>
             </div>
           </div>
@@ -125,17 +125,12 @@
   }
   </script>
 
-<style>
+<style scoped>
+@media (min-width: 800px) {
 .experience {
     display: flex;
     flex-direction: column;
     width: 100%;
-  }
-  .experience .heading {
-    font-size: 2rem;
-    font-weight: 500;
-    color: black;
-    text-decoration: none;
   }
   
   .experience .horizontal-line {
@@ -149,11 +144,16 @@
     justify-content: center;
   }
 
-  .nav-link {
-    color: black;
+    .nav-item:hover {
+      border-left: 3px solid #dcdcea;
+    }
+
+    .nav-item:active {
+      background-color: aliceblue;
+    }
   }
 
-  .nav-link:hover {
-    background-color: green;
+  .nav {
+    overflow-x: scroll;
   }
 </style>

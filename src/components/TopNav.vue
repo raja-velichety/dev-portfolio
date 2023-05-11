@@ -1,16 +1,20 @@
 <template>
-    <div class="container-fluid">
-    <div class="top-nav">
-        <div class="logo">
-            <router-link to="/" class="named-logo">RV</router-link>
-        </div>
-        <div  class="menu">
-            <div  v-for="link in links" :key="link" class="link">
-            <a :href="link.href" key="{{ link.name }}">{{link.name}}</a>
-            </div>
-        </div>
+<nav class="top-nav navbar navbar-expand-lg" v-bind:class=" { 'navbarOpen': show }">    
+    <div class="logo navbar-brand">
+        <router-link to="/" class="named-logo">RV</router-link>
     </div>
-</div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" @click.stop="toggleNavbar()">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" v-bind:class="{ 'show': show }">
+        <ul class="navbar-nav my-2 my-lg-0">
+            <div  v-for="link in links" :key="link" class="nav-item">
+                <a :href="link.href" key="{{ link.name }}" class="nav-link">{{link.name}}</a>
+            </div>
+        </ul>
+    </div>
+</nav>
 </template>
 
 <script>
@@ -19,14 +23,19 @@ export default {
     name: "TopNav",
     data() {
         return {
-            menuOpen: false,
             links: [
                 { name: "About", href: "#about-section" },
                 { name: "Experience", href: "#experience-section" },
                 { name: "Projects", href: "#projects-section" },
             ],
+            show: false,
         }
     },
+    methods: {
+        toggleNavbar() {
+            this.show = !this.show
+        }
+    }
   }
 </script>
 
@@ -46,7 +55,23 @@ export default {
 .named-logo {
     font-size: 1.5rem;
     font-weight: bold;
-    color: black;
+    color: #dcdcea;
     text-decoration: none;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    border: #dcdcea solid 1px;
+    transition: all 0.5s ease-in-out;
+}
+
+.nav-link:hover {
+  border-bottom: 2px solid #dcdcea;
+  color: #dcdcea;
+}
+
+.navbar-toggler-icon {
+    color: #dcdcea;
 }
 </style>

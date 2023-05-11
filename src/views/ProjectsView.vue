@@ -109,93 +109,81 @@
 
         noteWorthyProjects : [
           {
-            title: "Rootjobs.com",
+            title: "Assistive Chatbot",
             description: [
-              "A job search platform built with python, Django, MySQL, and AWS.",
-              "Support api for integrating with other vendors based on django rest framework",
-              "Developed frontend using react"
+              "Assistive chatbot application built for managing the office staff queries and issues.",
             ],
             tools: [
-              "Python",
-              "Django",
-              "PostgresSQL",
               "React",
-              "Django Rest Framework"
+              "Node",
+              "Express",
+              "MongoDB",
             ]
           },
           {
-            title: "Rootjobs.com",
+            title: "Crop disease detection App",
             description: [
-              "A job search platform built with python, Django, MySQL, and AWS.",
-              "Support api for integrating with other vendors based on django rest framework",
-              "Developed frontend using react"
+              "An android app which assists farmers in disease detection in crops and suggests several techniques and cultivation ideas for better crop production and welfare of farming community."
             ],
             tools: [
+              "Android",
+              "Java",
               "Python",
-              "Django",
-              "PostgresSQL",
-              "React",
-              "Django Rest Framework"
+              "Tensorflow",
+              "Keras",
+              "Flask",
             ]
           },
           {
-            title: "Rootjobs.com",
+            title: "Comparelaptops.in",
             description: [
-              "A job search platform built with python, Django, MySQL, and AWS.",
-              "Support api for integrating with other vendors based on django rest framework",
-              "Developed frontend using react"
+              "A laptop comparison platform along with affiliate product listings and support for price comparison.",
             ],
             tools: [
-              "Python",
-              "Django",
-              "PostgresSQL",
-              "React",
-              "Django Rest Framework"
+              "Angular",
+              "Node",
+              "Express",
+              "MongoDB",
+              "AWS"
             ]
           },
           {
-            title: "Rootjobs.com",
+            title: "ShopperSite",
             description: [
-              "A job search platform built with python, Django, MySQL, and AWS.",
-              "Support api for integrating with other vendors based on django rest framework",
-              "Developed frontend using react"
+              "A ecommerce shopping platform provides the user with a catalog of different product available for purchase in the store. In order to facilitate online purchase a shopping cart is provided to the user along with payment options and order confirmation."
             ],
             tools: [
-              "Python",
-              "Django",
-              "PostgresSQL",
-              "React",
-              "Django Rest Framework"
+              "Angular",
+              "Node",
+              "Express",
+              "MongoDB",
+              "AWS"
             ]
           },
           {
-            title: "Rootjobs.com",
+            title: "Sentimental Analysis using Pig",
             description: [
-              "A job search platform built with python, Django, MySQL, and AWS.",
-              "Support api for integrating with other vendors based on django rest framework",
-              "Developed frontend using react"
+              "Sentimental analysis of tweets to classify them into positive or negative using Apache Pig and Hadoop."
             ],
             tools: [
-              "Python",
-              "Django",
-              "PostgresSQL",
-              "React",
-              "Django Rest Framework"
+              "Apache Pig",
+              "Hadoop",
+              "Python"
             ]
           },
           {
-            title: "Rootjobs.com",
+            title: "Retail Store",
             description: [
-              "A job search platform built with python, Django, MySQL, and AWS.",
-              "Support api for integrating with other vendors based on django rest framework",
-              "Developed frontend using react"
+              "A complete ecommerce responsive website and SEO friendly optimized website and it also features a PayPal payment gateway integration"
             ],
             tools: [
-              "Python",
-              "Django",
-              "PostgresSQL",
-              "React",
-              "Django Rest Framework"
+              "HTML",
+              "CSS",
+              "JavaScript",
+              "Bootstrap",
+              "jQuery",
+              "PHP",
+              "MySQL",
             ]
           },
         ]

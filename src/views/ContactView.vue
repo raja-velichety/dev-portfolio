@@ -1,10 +1,12 @@
 <template>
-    <div class="container-fluid">
-        <div class="contact-information text-center">
+    <div class="container-fluid text-center">
+        <div class="col-md-2"></div>
+        <div class="contact-information col-md-8 col-xs-12">
             <h1 class="heading">{{ contact.heading }}</h1>
             <p class="description">{{ contact.description }}</p>
-            <button class="btn btn-primary btn-lg">{{ contact.cta }}</button>
+            <button class="btn btn-primary btn-lg"><span>{{ contact.cta }}</span></button>
         </div>
+        <div class="col-md-2"></div>
     </div>
 </template>
 
@@ -29,5 +31,36 @@ export default {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.btn {
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btn span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.btn:hover span {
+  padding-right: 25px;
+}
+
+.btn:hover span:after {
+  opacity: 1;
+  right: 0;
 }
 </style>

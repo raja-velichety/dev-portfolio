@@ -1,7 +1,8 @@
 <template>
+  <div class="container-fluid">
     <top-nav class="top-bar"/>
     <div class="row">
-      <side-nav class="links col-md-2 col-xs-12"/>
+      <side-nav class="col-md-2 col-xs-12" id="side-nav"/>
       <div class="views col-md-10  col-xs-12" data-spy="scroll" data-target=".top-bar">
         <home-view class="content"/>
         <about-view class="content" id="about-section"/>
@@ -10,6 +11,7 @@
         <contact-view class="content" id="contact-section"/>
       </div>
     </div>
+  </div>
 </template>
 
 <script>
@@ -36,9 +38,16 @@ export default {
 </script>
 
 <style>
+@media screen and (max-width: 800px) {
+    #side-nav {
+        display: none;
+    }
+}
+ 
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
-  color: #2c3e50;
+  color: #dcdcea;
+  background-color: #1e1e1e;
 }
 
 .top-nav{
@@ -49,7 +58,7 @@ export default {
 
 .top-nav a {
   font-weight: bold;
-  color: #2c3e50;
+  color: #dcdcea;
   margin: 0 10px;
   display: inline-block;
   text-decoration-line: none;
@@ -68,12 +77,27 @@ export default {
 .heading {
   font-size: 2rem;
   font-weight: 500;
-  color: black;
+  color: #dcdcea;
   text-decoration: none;
 }
 
 .horizontal-line {
   width: 100%;
   border: 1px solid rgb(77, 63, 63);
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .experience-tablist {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+  }
+
+  .experience-tablist .nav-item:active {
+    font-size: small;
+    border-bottom: 2px solid black;
+  }
+
 }
 </style>

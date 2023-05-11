@@ -48,11 +48,6 @@ export default {
     color: rgb(0, 0, 0);
 }
 
-.card-header, .card-footer {
-    background-color: #f7f7fa;
-    border: none;
-}
-
 .tool {
     padding: 5px;
 }
