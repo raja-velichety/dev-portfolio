@@ -224,7 +224,22 @@
               "Machine Learning"
             ],
             github: "https://github.com/raja-velichety/machine-learning-algorithms-python.git",
-          }
+          },
+          {
+            title: "Trackks footwear",
+            description: [
+              "A responsive website for a footwear collection that showcases the collection and provides users with an option to donate to the cause that the collection supports."
+            ],
+            tools: [
+              "HTML",
+              "CSS",
+              "JavaScript",
+              "Bootstrap",
+              "jQuery",
+            ],
+            github: "https://github.com/raja-velichety/trackks-footwear.git",
+          },
+          
         ]
       }
     },
