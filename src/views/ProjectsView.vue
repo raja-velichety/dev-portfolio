@@ -118,7 +118,8 @@
               "Node",
               "Express",
               "MongoDB",
-            ]
+            ],
+            github: "https://github.com/raja-velichety/assistive-chatbot.git",
           },
           {
             title: "Crop disease detection App",
@@ -132,7 +133,8 @@
               "Tensorflow",
               "Keras",
               "Flask",
-            ]
+            ],
+            github: "",
           },
           {
             title: "Comparelaptops.in",
@@ -145,7 +147,8 @@
               "Express",
               "MongoDB",
               "AWS"
-            ]
+            ],
+            github: "https://github.com/raja-velichety/compare-laptops.git",
           },
           {
             title: "ShopperSite",
@@ -158,21 +161,23 @@
               "Express",
               "MongoDB",
               "AWS"
-            ]
+            ],
+            github: "https://github.com/raja-velichety/ShopperSite.git",
           },
           {
-            title: "Sentimental Analysis using Pig",
+            title: "Sentimental Analysis on Global warming",
             description: [
-              "Sentimental analysis of tweets to classify them into positive or negative using Apache Pig and Hadoop."
+              "Sentimental analysis of tweets regarding the affects of global warming to classify them into positive or negative using Apache Pig and Hadoop."
             ],
             tools: [
               "Apache Pig",
               "Hadoop",
               "Python"
-            ]
+            ],
+            github: "https://github.com/raja-velichety/sentimental-analysis.git",
           },
           {
-            title: "Retail Store",
+            title: "Ecommerce Store",
             description: [
               "A complete ecommerce responsive website and SEO friendly optimized website and it also features a PayPal payment gateway integration"
             ],
@@ -184,8 +189,42 @@
               "jQuery",
               "PHP",
               "MySQL",
-            ]
+            ],
+            github: "https://github.com/raja-velichety/ecommerce-store.git",
           },
+          {
+            title: "Machine learning Java algorithms",
+            description: [
+              "Machine learning algorithms implemented in Java"
+            ],
+            tools: [
+              "Java",
+              "Machine Learning"
+            ],
+            github: "https://github.com/raja-velichety/machine-learning-java.git",
+          },
+          {
+            title: "Sentimental Analysis on Affects of Demonetization in india",
+            description: [
+              "Sentimental analysis of tweets regarding the affects of demonetization in india to classify them into positive or negative using Apache Pig and Hadoop."
+            ],
+            tools: [
+              "Python",
+              "Apache Pig",
+            ],
+            github: "https://github.com/raja-velichety/sentimental-analysis-demonetisation.git",
+          },
+          {
+            title: "Machine learning Python algorithms",
+            description: [
+              "Machine learning algorithms implemented in Python"
+            ],
+            tools: [
+              "Python",
+              "Machine Learning"
+            ],
+            github: "https://github.com/raja-velichety/machine-learning-algorithms-python.git",
+          }
         ]
       }
     },

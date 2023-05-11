@@ -1,11 +1,11 @@
 <template>
     <div class="card project-card container">
         <div class="header">
-            <font-awesome-icon class="icon" :icon="['fab', 'github']" size="xl"/>
+            <a :href="project.github"><font-awesome-icon class="icon" :icon="['fab', 'github']" size="xl"/></a>
             <h3 class="heading">{{ project.title }}</h3>
         </div>
         <div class="body">
-            <p class="description"> {{ project.description }}</p>
+            <p class="description" v-for="description in project.description" :key="description">{{ description }}</p>
         </div>
         <div class="footer">
             <p class="tools">
