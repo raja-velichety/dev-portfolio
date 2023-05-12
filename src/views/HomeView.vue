@@ -7,7 +7,7 @@
         <h2 class="tagline">I build things for the web.</h2>
         <p class="description">I'm a Software Engineer with a
             passion for building software solutions that make a difference. I love challenges and work with cross functional teams to build something big and beautiful </p>
-        <button class="btn btn-outline-success btn-lg">Resume</button>
+        <button class="btn btn-outline-success btn-lg" v-on:click="openpdf()">Resume</button>
       </terminal-card>
     </div>
   </div>
@@ -19,8 +19,13 @@ export default {
   name: 'HomeView',
   components: {
     TerminalCard,
-  }
-}
+  },
+  methods: {
+    openpdf() {
+      window.open('https://drive.google.com/file/d/19RjuXBrrDhHC27Mn2hOPd-r0rKap7ngs/view?usp=share_link');
+    }
+},
+};
 </script>
 
 <style>

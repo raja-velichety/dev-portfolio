@@ -4,7 +4,9 @@
         <router-link to="/" class="named-logo">RV</router-link>
     </div>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" @click.stop="toggleNavbar()">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon">
+            <font-awesome-icon :class="['icon']" :icon="['fa',  'bars']" size="lg"/>
+        </span>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent" v-bind:class="{ 'show': show }">
@@ -71,7 +73,7 @@ export default {
   color: #dcdcea;
 }
 
-.navbar-toggler-icon {
+.icon {
     color: #dcdcea;
 }
 </style>
