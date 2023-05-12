@@ -1,12 +1,12 @@
 <template>
   <div class="container-fluid">
-    <div class="projects">
+    <div class="projects" >
       <h1 class="heading">3. Projects</h1>
       <hr class="horizontal-line"/>
       <div class="container-fluid">
         <div class="row" v-for="project, index in featuredProjects" :key="project.id">
           <div class="col-md-6">
-            <div class="project" v-if="arrangeProjects(index)">
+            <div class="project" v-if="arrangeProjects(index)" v-animate="'slide-up'">
               <div class="project-info">
                 <span class="text-success">Featured Project</span>
                 <h5 class="title">{{ project.title }}</h5>
@@ -16,6 +16,10 @@
                     <span v-for="tool in project.tools" :key="tool" class="pill">{{ tool }} </span>
                   </small>
                 </p>
+                <div class="project-links">
+                  <a :href="project?.github" v-if="project.github"><font-awesome-icon class="icon" :icon="['fab', 'github']" size="xl"/></a>
+                  <a :href="project?.demo" v-if="project.demo"><font-awesome-icon class="icon" :icon="['fa', 'link']" size="xl"/></a>
+                </div>
               </div>
             </div>
             <img v-else class="img-fluid project-img" :src="require(`@/assets/images/${project.image}`)"/>
@@ -32,6 +36,10 @@
                     <span v-for="tool in project.tools" :key="tool" class="pill">{{ tool }} </span>
                   </small>
                 </p>
+                <div class="project-links">
+                  <a :href="project?.github" v-if="project.github"><font-awesome-icon class="icon" :icon="['fab', 'github']" size="xl"/></a>
+                  <a :href="project?.demo" v-if="project.demo"><font-awesome-icon class="icon" :icon="['fa', 'link']" size="xl"/></a>
+                </div>
               </div>
             </div>
             </div>
@@ -88,7 +96,9 @@
               "jQuery",
               "PHP",
               "MySQL"
-            ]
+            ],
+            github: "https://github.com/raja-velichety/trackks-footwear.git",
+            demo: "https://trackksfootwear-24d7d.web.app/"
           },
           {
             id: "hotel-kamat",
@@ -103,7 +113,9 @@
               "Angular",
               "Bootstrap",
               "jQuery",
-            ]
+            ],
+            github: "https://github.com/raja-velichety/hotel-kamat.git",
+            demo: "https://hotel-kamat.web.app/",
           }
         ],
 
@@ -256,7 +268,7 @@
   }
   </script>
 
-<style>
+<style scoped>
 .projects {
     display: flex;
     flex-direction: column;
@@ -291,9 +303,26 @@
   border-radius: 5px;
 }
 
+.fade-in {
+  transform: translateY(40%);
+  transition:all 1s ease-out;
+}
+
+.icon {
+  color: #fff;
+  padding: 1rem;
+}
+
+.project-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: 1rem;
+}
+
 @media screen and (max-width: 768px) {
   .project-info {
-    word-wrap: break-word; 
+ word-wrap: break-word; 
   }
 }
 </style>

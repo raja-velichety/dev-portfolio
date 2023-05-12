@@ -1,12 +1,10 @@
 <template>
     <div class="container-fluid text-center">
-        <div class="col-md-2"></div>
         <div class="contact-information col-md-8 col-xs-12">
             <h1 class="heading">{{ contact.heading }}</h1>
             <p class="description">{{ contact.description }}</p>
-            <button class="btn btn-primary btn-lg"><span>{{ contact.cta }}</span></button>
+            <a :href="contact.email" class="btn btn-primary btn-lg"><span>{{ contact.cta }}</span></a>
         </div>
-        <div class="col-md-2"></div>
     </div>
 </template>
 
@@ -18,7 +16,8 @@ export default {
             contact : {
                 heading: "4. What's Next?",
                 description: "Although I am not currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!",
-                cta: "Say Hello"
+                cta: "Say Hello",
+                email: "mailto:rajaravichandravelichety@gmail.com"
             }
         }
     },

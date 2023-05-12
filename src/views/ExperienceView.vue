@@ -1,30 +1,32 @@
 <template>
     <div class="container-fluid" id="experience-section">
-      <div class="experience">
-      <h1 class="heading">2. I have worked before:</h1>
-      <hr class="horizontal-line"/>
-      <div class="experience-tabs">
-        <div class="row">
-          <div class="col-md-3 col-xs-12 experience-tablist">
-            <ul class="nav" style="flex: 0 0 auto;" v-for="job,index in jobs" :key="job">
-              <li class="nav-item">
-                <a class="nav-link" v-on:click="selectJob(index)">{{ job.company }}</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-9 col-xs-12 experience-info">
-              <div :id="selectedJob.id">
-                <h4>{{ selectedJob.title }}</h4>
-                <p>{{ selectedJob.date }}</p>
-                <div class="col-xs-12">
-                  <ul>
-                    <li class="list-box" v-for="item in selectedJob.description" :key="item">{{ item }}</li>
-                  </ul>
+      <div class="col-md-10 col-xs-12">
+        <div class="experience">
+        <h1 class="heading">2. I have worked before:</h1>
+        <hr class="horizontal-line"/>
+        <div class="experience-tabs">
+          <div class="row">
+            <div class="col-md-3 col-xs-12 experience-tablist">
+              <ul class="nav" style="flex: 0 0 auto;" v-for="job,index in jobs" :key="job">
+                <li class="nav-item">
+                  <a class="nav-link" v-on:click="selectJob(index)">{{ job.company }}</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-9 col-xs-12 experience-info">
+                <div :id="selectedJob.id">
+                  <h4>{{ selectedJob.title }}</h4>
+                  <p>{{ selectedJob.date }}</p>
+                  <div class="col-xs-12">
+                    <ul>
+                      <li class="list-box" v-for="item in selectedJob.description" :key="item">{{ item }}</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div> 
+          </div> 
+        </div>
       </div>
     </div>
   </template>

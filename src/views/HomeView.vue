@@ -1,6 +1,6 @@
-<template>
+<template >
   <div class="container-fluid">
-    <div class="home">
+    <div class="home col-md-10 col-xs-12">
       <terminal-card>
         <p class="tag">Hello, I'm</p>
         <h1 class="title">Raja ravichandra Velichety.</h1>

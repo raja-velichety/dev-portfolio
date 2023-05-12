@@ -2,7 +2,7 @@
     <div class="container-fluid">
         <div class="col-md-12 text-center">
             <h3 class="heading">Other NoteWorthy Projects</h3>
-            <hr class="horizontal-line"/>
+            <hr class="horizontal-line  col-md-10 col-xs-12"/>
         </div>
         <div class="container-fluid" >
             <div class="row">

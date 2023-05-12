@@ -1,6 +1,6 @@
 <template>
   <div class="container-fluid" id="about-section">
-    <div class="about">
+    <div class="about col-md-10 col-xs-12">
       <h1 class="heading">1.About Me</h1>
       <hr class="horizontal-line"/>
       <div class="container-fluid about-info">

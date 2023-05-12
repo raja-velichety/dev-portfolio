@@ -32,8 +32,14 @@ export default {
     AboutView,
     ExperienceView,
     ProjectsView,
-    ContactView
-  }
+    ContactView,
+  },
+  data() {
+    return {
+    }
+  },
+  mounted() {
+  },
 }
 </script>
 
@@ -86,6 +92,12 @@ export default {
   border: 1px solid rgb(77, 63, 63);
 }
 
+
+/* css animations */
+/* .fade-in {
+  transition: opacity 300ms ease;
+} */
+
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
   /* .experience-tablist {
@@ -93,5 +105,19 @@ export default {
     flex-direction: row;
     overflow-x: scroll;
   } */
+}
+
+.animate {
+  transition-delay: .1s;
+  transition-duration: .25s;
+  transition-timing-function: ease-in;
+}
+ 
+.slide-up {
+  transform: translateY(0);
+}
+ 
+.slide-up.animate-active {
+  transform: translateY(-100px);
 }
 </style>
