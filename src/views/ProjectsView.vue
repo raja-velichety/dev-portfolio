@@ -290,4 +290,10 @@
   border: 1px solid #c6c0c0;
   border-radius: 5px;
 }
+
+@media screen and (max-width: 768px) {
+  .project-info {
+    word-wrap: break-word; 
+  }
+}
 </style>

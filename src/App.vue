@@ -88,16 +88,10 @@ export default {
 
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
-  .experience-tablist {
+  /* .experience-tablist {
     display: flex;
     flex-direction: row;
     overflow-x: scroll;
-  }
-
-  .experience-tablist .nav-item:active {
-    font-size: small;
-    border-bottom: 2px solid black;
-  }
-
+  } */
 }
 </style>

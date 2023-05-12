@@ -6,7 +6,7 @@
       <div class="experience-tabs">
         <div class="row">
           <div class="col-md-3 col-xs-12 experience-tablist">
-            <ul class="nav nav-pills" v-for="job,index in jobs" :key="job" role="tablist">
+            <ul class="nav" style="flex: 0 0 auto;" v-for="job,index in jobs" :key="job">
               <li class="nav-item">
                 <a class="nav-link" v-on:click="selectJob(index)">{{ job.company }}</a>
               </li>
@@ -16,8 +16,10 @@
               <div :id="selectedJob.id">
                 <h4>{{ selectedJob.title }}</h4>
                 <p>{{ selectedJob.date }}</p>
-                <div class="col-xs-12 text-truncate">
-                <p class="text-justify" v-for="item in selectedJob.description" :key="item">{{ item }}</p>
+                <div class="col-xs-12">
+                  <ul>
+                    <li class="list-box" v-for="item in selectedJob.description" :key="item">{{ item }}</li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -126,7 +128,6 @@
   </script>
 
 <style scoped>
-@media (min-width: 800px) {
 .experience {
     display: flex;
     flex-direction: column;
@@ -149,11 +150,20 @@
     }
 
     .nav-item:active {
-      background-color: aliceblue;
+      background-color: rgba(240, 248, 255, 0.856);
     }
+
+  @media screen and (max-width: 800px){
+  .experience-tablist {
+    display: flex;
+    overflow: scroll;
+    flex-wrap: nowrap;
+    width: 400px;
+    padding:1rem;
   }
 
-  .nav {
-    overflow-x: scroll;
+  a.nav-link:active {
+    background-color: aliceblue;
   }
+}
 </style>

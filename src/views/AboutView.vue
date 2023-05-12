@@ -62,6 +62,7 @@ export default {
   .about-info{
     background-color: black;
     padding: 1rem;
+    word-wrap: break-word;
   }
 </style>
 
