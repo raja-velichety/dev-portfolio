@@ -34,18 +34,12 @@ export default {
     ProjectsView,
     ContactView,
   },
-  data() {
-    return {
-    }
-  },
-  mounted() {
-  },
 }
 </script>
 
 <style>
 @media screen and (max-width: 800px) {
-  #side-nav {
+  #side-nav, #right-bar {
       display: none;
   }
 }

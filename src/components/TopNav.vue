@@ -47,7 +47,10 @@ export default {
 
 <style scoped>
 .top-nav {
-    padding: 10px;
+    padding-left:5rem;
+    padding-right:5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     display: flex;
     justify-content: space-between;
 }
