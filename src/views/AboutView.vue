@@ -10,7 +10,9 @@
             <p class="skills">
               Here are a few technologies I’ve been working with recently:
               <small class="text-muted">
-                <span v-for="skill in profile.skills" :key="skill" class="pill">{{ skill }} </span>
+                <ul class="skill-list">
+                  <li v-for="skill in profile.skills" :key="skill">{{ skill }}</li>
+                </ul>
               </small>
               </p>
           </div>
@@ -63,6 +65,14 @@ export default {
     background-color: black;
     padding: 1rem;
     word-wrap: break-word;
+  }
+
+  .skill-list {
+    column-count: 2;
+  }
+
+  ul {
+    list-style-type: circle;
   }
 </style>
 
