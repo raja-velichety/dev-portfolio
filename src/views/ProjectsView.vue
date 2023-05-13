@@ -77,15 +77,33 @@
             ]
           },
           {
+            id: "portfolio",
+            title: "Portfolio",
+            image: "dev-portfolio.png",
+            description: [
+              "A portfolio website that offers a seamless user experience to browse my work and get in touch.",
+              "1. Responsive Design: The website should have a responsive design to ensure that it is easily accessible and user-friendly across different devices and screen sizes.",
+              "2. Project Showcase: The projects should be showcased prominently on the website.",
+              "3. Contact Form: Provide users with an option to get in touch with you through a contact form.",
+            ],
+            tools: [
+              "Vue",
+              "Bootstrap",
+              "jQuery",
+            ],
+            github: "https://github.com/raja-velichety/dev-portfolio.git",
+            demo: "https://raja-velichety-portfolio.web.app/"
+          },
+          {
             id: "trackks-footwear",
             title: "Trackks Footwear",
             image: "trackks.png",
             description: [
               "1. Responsive Design: The website should have a responsive design to ensure that it is easily accessible and user-friendly across different devices and screen sizes.",
-              "2. Footwear Collection Showcase: The footwear collection should be showcased prominently on the website, with high-quality images and detailed descriptions to help customers make informed purchase decisions.",
-              "3. Donation Options: Provide users with an option to donate to the cause or charity that the footwear collection supports. Make it easy for users to donate with a user-friendly payment gateway and clear instructions on how their donation will be used.",
-              "4. Preview Video: Including a preview video of the footwear collection can help users get a better idea of what the products look like and how they can be used.",
-              "5. User Feedback: A survey can be included on the website to collect user feedback. Use a tool like Survey Monkey to create and distribute the survey. This will help you gather valuable insights and feedback from your customers, which you can use to improve your collection and website.",
+              "2. User Feedback: A survey can be included on the website to collect user feedback. Use a tool like Survey Monkey to create and distribute the survey. This will help you gather valuable insights and feedback from your customers, which you can use to improve your collection and website.",
+              "3. Footwear Collection Showcase",
+              "4. Donation Options",
+              "5. Preview Video",
             ],
             tools: [
               "HTML",
