@@ -15,6 +15,7 @@
                 <a :href="link.href" key="{{ link.name }}" class="nav-link">{{link.name}}</a>
             </div>
         </ul>
+        <button class="btn btn-outline-success btn-lg resume ms-auto" v-on:click="openpdf()">Resume</button>
     </div>
 </nav>
 </template>
@@ -36,6 +37,9 @@ export default {
     methods: {
         toggleNavbar() {
             this.show = !this.show
+        },
+        openpdf() {
+        window.open('https://drive.google.com/file/d/19RjuXBrrDhHC27Mn2hOPd-r0rKap7ngs/view?usp=share_link');
         }
     }
   }
@@ -75,5 +79,15 @@ export default {
 
 .icon {
     color: #dcdcea;
+}
+
+.resume {
+    display: flex;
+  align-content: space-around;
+  justify-content: flex-end;
+    align-self: flex-end;
+    border: #dcdcea solid 1px;
+    color: #dcdcea;
+    transition: all 0.5s ease-in-out;
 }
 </style>

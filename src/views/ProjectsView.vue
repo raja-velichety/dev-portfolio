@@ -65,9 +65,8 @@
             title: "Rootjobs.com",
             image: "rootjobs.png",
             description: [
-              "A job search platform built with python, Django, MySQL, and AWS.",
-              "Support api for integrating with other vendors based on django rest framework",
-              "Developed frontend using react"
+              "A Online Employment Platform for people seeking jobs and the employers who need great people",
+            "Support api for integrating with other vendors based on django rest framework",
             ],
             tools: [
               "Python",

@@ -45,9 +45,9 @@ export default {
 
 <style>
 @media screen and (max-width: 800px) {
-    #side-nav {
-        display: none;
-    }
+  #side-nav {
+      display: none;
+  }
 }
  
 #app {
@@ -90,21 +90,6 @@ export default {
 .horizontal-line {
   width: 100%;
   border: 1px solid rgb(77, 63, 63);
-}
-
-
-/* css animations */
-/* .fade-in {
-  transition: opacity 300ms ease;
-} */
-
-@media only screen and (max-width: 768px) {
-  /* For mobile phones: */
-  /* .experience-tablist {
-    display: flex;
-    flex-direction: row;
-    overflow-x: scroll;
-  } */
 }
 
 .animate {

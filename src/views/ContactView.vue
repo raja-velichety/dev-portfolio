@@ -14,10 +14,10 @@ export default {
     data() {
         return {
             contact : {
-                heading: "4. What's Next?",
-                description: "Although I am not currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!",
-                cta: "Say Hello",
-                email: "mailto:rajaravichandravelichety@gmail.com"
+              heading: "4. What's Next?",
+              description: "I am currently looking for any new opportunities, got any work opportunity or any suggestion or just want to say hi, my inbox is always open. I'll try my best to get back to you!",
+              cta: "Say Hello",
+              email: "mailto:rajaravichandravelichety@gmail.com"
             }
         }
     },
