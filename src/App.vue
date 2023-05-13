@@ -3,7 +3,7 @@
     <top-nav class="top-bar"/>
     <div class="row">
       <side-nav class="col-md-2 col-xs-12" id="side-nav"/>
-      <div class="views col-md-10  col-xs-12" data-spy="scroll" data-target=".top-bar">
+      <div class="views col-md-10  col-xs-12">
         <home-view class="content"/>
         <about-view class="content" id="about-section"/>
         <experience-view class="content" id="experience-section"/>
@@ -106,7 +106,7 @@ export default {
   }
 
   #footer {
-    margin-bottom: 1rem;
+    margin-bottom: 4rem;
   }
 }
 </style>
