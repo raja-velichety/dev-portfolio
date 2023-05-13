@@ -1,6 +1,6 @@
 <template class="side-nav">
-    <div class="container-fluid">
-        <div class="links" v-for="link in links" :key="link">
+    <div class="container-fluid links">
+        <div v-for="link in links" :key="link">
             <div class="nav-item">
                 <a class="nav-link" :href=link.href><font-awesome-icon :class="['icon', link.name]" :icon="['fab',  link.name]" size="2xl"/></a>
             </div>
@@ -30,8 +30,9 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     margin-top: 10rem;
+    margin-bottom: 10rem;
 }
 
 .icon {
