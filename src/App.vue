@@ -67,6 +67,7 @@ export default {
 .content {
   min-height: 100vh;
   display: flex;
+  padding: 1rem;
 }
 
 .views {
