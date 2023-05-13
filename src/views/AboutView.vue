@@ -37,10 +37,9 @@ export default {
       profile: {
         image: "profile.jpg",
         description: [
-          "Hello!!! I'm Raja, I enjoy building and working on things that might make a impact. It all started with a simple hello world program in C, I was fascinated on how it worked and by the fact  that I could build something that could be used by others. Since then, I have been learning and building things that I am passionate about.",
+          "Hello!!! I'm Raja, It all started with a simple hello world program in C, I was fascinated on how it worked and by the fact  that I could build something that could be used by others. Since then, I have been learning and building things that I am passionate about.",
           "I pursued my Masters in Computer Science from Eastern Michigan University, Michigan, USA. I have worked on various projects ranging from building a simple student registration web application to building a full fledged online employment solution for people seeking jobs and the employers who need great people. Also worked on building a simple machine learning model to currently working on a crop disease detection and cure prediction machine learning model.",
-          "I have a passion for learning and sharing my knowledge with others a public as possible.", 
-        "If you found value in something I have created, please feel free to give me a shout out. I would love to hear from you!"
+          "I have a passion for learning and sharing my knowledge with others as possible.", 
         ],
         skills_header: "Here are a few technologies I’ve been working with recently:",
         skills: [
