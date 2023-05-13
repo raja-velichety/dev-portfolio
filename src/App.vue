@@ -9,6 +9,7 @@
         <experience-view class="content" id="experience-section"/>
         <projects-view class="content" id="projects-section"/>
         <contact-view class="content" id="contact-section"/>
+        <side-nav class="col-xs-12" id="footer" v-if="isMobile"/>
       </div>
     </div>
   </div>
@@ -34,6 +35,18 @@ export default {
     ProjectsView,
     ContactView,
   },
+  created(){  
+    this.isMobile();
+  },
+  methods: {
+    isMobile() {
+      if (screen.width <= 760) {
+        return true
+      } else {
+        return false
+      }
+    }
+  }
 }
 </script>
 
@@ -87,17 +100,13 @@ export default {
   border: 1px solid rgb(77, 63, 63);
 }
 
-.animate {
-  transition-delay: .1s;
-  transition-duration: .25s;
-  transition-timing-function: ease-in;
-}
- 
-.slide-up {
-  transform: translateY(0);
-}
- 
-.slide-up.animate-active {
-  transform: translateY(-100px);
+@media screen and (max-width: 800px) {
+  .content {
+    margin-bottom: 1rem;
+  }
+
+  #footer {
+    margin-bottom: 1rem;
+  }
 }
 </style>

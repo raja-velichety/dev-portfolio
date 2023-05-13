@@ -90,6 +90,7 @@
               "Vue",
               "Bootstrap",
               "jQuery",
+              "Firebase"
             ],
             github: "https://github.com/raja-velichety/dev-portfolio.git",
             demo: "https://raja-velichety-portfolio.web.app/"
@@ -111,8 +112,7 @@
               "JavaScript",
               "Bootstrap",
               "jQuery",
-              "PHP",
-              "MySQL"
+              "Firebase"
             ],
             github: "https://github.com/raja-velichety/trackks-footwear.git",
             demo: "https://trackksfootwear-24d7d.web.app/"
@@ -130,6 +130,7 @@
               "Angular",
               "Bootstrap",
               "jQuery",
+              "Firebase"
             ],
             github: "https://github.com/raja-velichety/hotel-kamat.git",
             demo: "https://hotel-kamat.web.app/",

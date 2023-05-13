@@ -26,13 +26,24 @@ export default {
 </script>
 
 <style scoped>   
-.links {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-    margin-top: 10rem;
-    margin-bottom: 10rem;
+@media screen and (min-width: 800px) {
+    .links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        margin-top: 10rem;
+        margin-bottom: 10rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .links {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
 }
 
 .icon {

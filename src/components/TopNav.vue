@@ -46,21 +46,16 @@ export default {
 </script>
 
 <style scoped>
-.top-nav {
-    padding-left:5rem;
-    padding-right:5rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    display: flex;
-    justify-content: space-between;
+@media screen and (min-width: 800px) {
+    .top-nav {
+        padding-left:5rem;
+        padding-right:5rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        display: flex;
+        justify-content: space-between;
+    }
 }
-
-.menu {
-  display: flex;
-  align-content: space-around;
-  justify-content: flex-end;
-}
-
 .named-logo {
     font-size: 1.5rem;
     font-weight: bold;
@@ -86,8 +81,8 @@ export default {
 
 .resume {
     display: flex;
-  align-content: space-around;
-  justify-content: flex-end;
+    align-content: space-around;
+    justify-content: flex-end;
     align-self: flex-end;
     border: #dcdcea solid 1px;
     color: #dcdcea;
