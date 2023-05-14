@@ -147,14 +147,17 @@
     justify-content: center;
   }
 
-    .nav-item:hover {
-      border-left: 3px solid #dcdcea;
-    }
+    
 
     .nav-item:active {
       background-color: rgba(240, 248, 255, 0.856);
     }
 
+  @media screen and (min-width: 800px) {
+    .nav-item:hover {
+      border-left: 3px solid #dcdcea;
+    }
+  }
   @media screen and (max-width: 800px){
   .experience-tablist {
     display: flex;
@@ -166,6 +169,10 @@
 
   a.nav-link:active {
     background-color: aliceblue;
+  }
+
+  .nav-item:hover {
+    border-bottom: 3px solid #dcdcea;
   }
 }
 </style>

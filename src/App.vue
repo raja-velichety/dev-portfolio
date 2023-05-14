@@ -55,6 +55,14 @@ export default {
   #side-nav, #right-bar {
       display: none;
   }
+
+  .content {
+    margin-bottom: 1rem;
+  }
+
+  #footer {
+    margin-bottom: 4rem;
+  }
 }
  
 #app {
@@ -100,13 +108,9 @@ export default {
   border: 1px solid rgb(77, 63, 63);
 }
 
-@media screen and (max-width: 800px) {
-  .content {
-    margin-bottom: 1rem;
-  }
-
-  #footer {
-    margin-bottom: 4rem;
-  }
+@media screen and (min-width: 800px) {
+ #footer {
+  display: none;
+ }
 }
 </style>
