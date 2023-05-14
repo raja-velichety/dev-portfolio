@@ -49,6 +49,10 @@ export default {
           "Vue",
           "Node",
           "Django",
+          "Rest API",
+          "GraphQL",
+          "MongoDB",
+          "PostgreSQL",
           "Azure",
           "AWS Lambda and EC2",
         ]
