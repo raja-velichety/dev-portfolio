@@ -39,7 +39,7 @@ export default {
             this.show = !this.show
         },
         openpdf() {
-        window.open('https://drive.google.com/file/d/19RjuXBrrDhHC27Mn2hOPd-r0rKap7ngs/view?usp=share_link');
+        window.open('https://drive.google.com/file/d/1ioNgRtoguCFMVP3I6QJJZTzZEZD5sTBL/view?usp=sharing');
         }
     }
   }
