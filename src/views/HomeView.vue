@@ -29,8 +29,7 @@ export default {
         title: 'Raja ravichandra Velichety',
         tagline: 'I Bring ideas to life on the web',
         description: [
-          "Software Engineer with a passion for building software solutions that make a difference.",
-          "I love challenges and work with cross functional teams to build something big and beautiful",
+          "Software engineer with 5 years of full stack development experience. Committed to delivering high-quality solutions and exceptional user experiences. Seeking a challenging role to drive innovation and contribute to dynamic development projects. Proficient in JavaScript (React, Vue), TypeScript (GraphQL), Python (Django), C#, cloud services (AWS, Azure), PHP, HTML, CSS, Bootstrap, and Foundation.",
       ],
       },
     };
