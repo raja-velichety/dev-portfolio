@@ -30,6 +30,7 @@ export default {
                 { name: "About", href: "#about-section" },
                 { name: "Experience", href: "#experience-section" },
                 { name: "Projects", href: "#projects-section" },
+                { name: "Blog", href: "https://raja-velichety-blog.web.app" },
             ],
             show: false,
         }
@@ -39,7 +40,7 @@ export default {
             this.show = !this.show
         },
         openpdf() {
-        window.open('https://drive.google.com/file/d/1ioNgRtoguCFMVP3I6QJJZTzZEZD5sTBL/view?usp=sharing');
+        window.open('https://docs.google.com/document/d/1eJgKpFlSEyAah3NN5BWwCbrcphfUTsEO/edit?usp=sharing&ouid=114525722219142594201&rtpof=true&sd=true');
         }
     }
   }
